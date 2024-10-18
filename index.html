@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trivia Game</title>
+    <link rel="stylesheet" href="design.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Londrina+Sketch&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Londrina+Sketch&family=Protest+Strike&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div id="welcome">
+        <marquee>Welcome to the 1 Vs 1 Game</marquee>
+      </div>
+      <div id="playerNames">
+        <h1>Enter Player Names</h1>
+        <label for="player1Name">Player 1 Name:</label>
+        <input
+          type="text"
+          id="player1Name"
+          placeholder="Player 1"
+        /><br /><br />
+        <label for="player2Name">Player 2 Name:</label>
+        <input
+          type="text"
+          id="player2Name"
+          placeholder="Player 2"
+        /><br /><br />
+        <label for="categorySelect">Select a Category:</label>
+        <select id="categorySelect">
+          <option value="9">General Knowledge</option>
+          <option value="11">Movies</option>
+          <option value="17">Science & Nature</option>
+          <option value="18">Computers</option>
+          <option value="21">Sports</option>
+          <option value="23">History</option></select
+        ><br /><br />
+        <button onclick="startGame()">Start Game</button>
+      </div>
+
+      <div id="waviy" class="hidden">
+        <span class="letter1">L</span>
+        <span class="letter2">o</span>
+        <span class="letter3">a</span>
+        <span class="letter4">d</span>
+        <span class="letter5">i</span>
+        <span class="letter6">n</span>
+        <span class="letter7">g</span>
+        <span class="letter8">.</span>
+        <span class="letter9">.</span>
+        <span class="letter10">.</span>
+      </div>
+
+      <div id="game" class="hidden">
+        <h2 id="currentPlayer"></h2>
+        <p id="question"></p>
+        <div id="answers"></div>
+        <p id="feedback"></p>
+      </div>
+
+      <div id="gameOver" class="hidden">
+        <h2>Game Over</h2>
+        <p id="finalScore"></p>
+        <button onclick="restartGame()">Play Again</button>
+      </div>
+    </div>
+
+    <script src="Knowledge.js"></script>
+  </body>
+</html>

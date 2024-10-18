@@ -1,0 +1,142 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: #f0f8ff;
+  padding: 20px;
+}
+
+#welcome {
+  margin: 5vh 5vh;
+  font-weight: bold;
+  font-size: 40px;
+  font-family: "Londrina Sketch", sans-serif;
+  color: #e11d48;
+}
+
+body {
+  background-color: rgba(0, 0, 0, 0.863);
+}
+.container {
+  width: 60%;
+  margin: 15vh auto;
+  font-family: "Protest Strike", sans-serif;
+  font-weight: 150;
+  color: #2c3e50;
+}
+
+@media screen and (max-width: 320px) {
+  .container {
+    width: 80%;
+    margin: 10vh auto;
+  }
+}
+
+.hidden {
+  display: none;
+}
+
+#playerNames,
+#gameOver {
+  padding: 30px;
+  background-color: #f8f3e8;
+  border-radius: 8px;
+  box-shadow: 0 0 5px 5px rgba(255, 255, 255, 0.36);
+}
+#waviy {
+  height: 30vh;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+}
+#waviy span {
+  position: relative;
+  display: block;
+  font-size: 40px;
+  color: #fff;
+  text-transform: uppercase;
+  animation: flip 3s infinite;
+}
+
+.letter1 {
+  animation-delay: 0.1s;
+}
+.letter2 {
+  animation-delay: 0.2s;
+}
+.letter3 {
+  animation-delay: 0.3s;
+}
+.letter4 {
+  animation-delay: 0.4s;
+}
+.letter5 {
+  animation-delay: 0.5s;
+}
+.letter6 {
+  animation-delay: 0.6s;
+}
+.letter7 {
+  animation-delay: 0.7s;
+}
+.letter8 {
+  animation-delay: 0.8s;
+}
+.letter9 {
+  animation-delay: 0.9s;
+}
+.letter10 {
+  animation-delay: 0.11s;
+}
+@keyframes flip {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(360deg);
+  }
+}
+
+button {
+  padding: 10px 20px;
+  margin-top: 10px;
+  background-color: #28a745;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #218838;
+}
+
+#answers button {
+  display: block;
+  margin: 10px auto;
+  padding: 10px;
+  width: 80%;
+  background-color: #f700fff7;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#answers button:hover {
+  background-color: #b000b378;
+}
+
+#currentPlayer {
+  background: linear-gradient(to right, #c9ffbf, #ffafbd);
+  color: #910a9df5;
+}
+#question {
+  color: rgba(101, 8, 222, 0.944);
+  font-weight: 400;
+  font-size: x-large;
+}
+
+#feedback {
+  color: rgba(245, 17, 89, 0.751);
+  font-weight: bolder;
+}
