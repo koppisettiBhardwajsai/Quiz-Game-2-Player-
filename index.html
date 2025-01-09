@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz Game</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Londrina+Sketch&family=Protest+Strike&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="welcome">
+      <marquee>Welcome to 1 VS 1 Game</marquee>
+    </div>
+    <div class="main">
+      <h1>Enter Player Names</h1>
+      <!-- <h3>Player1</h3> -->
+      <label>Player1</label>
+      <input
+        type="name"
+        id="Player1Id"
+        placeholder="Enter Player1 Name"
+        required
+      />
+      <br />
+      <br />
+      <!-- <h3>Player2</h3> -->
+      <label>Player2</label>
+      <input
+        type="name"
+        id="Player2Id"
+        placeholder="Enter Player2 Name"
+        required
+      />
+      <br /><br />
+      <select id="cat"></select>
+      <button onclick="getNames()">Start Game</button>
+    </div>
+    <script src="Game.js"></script>
+  </body>
+</html>

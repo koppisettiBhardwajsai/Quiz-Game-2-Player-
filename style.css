@@ -1,0 +1,29 @@
+.main {
+  margin-left: 50vh;
+  margin-top: 15vh;
+  background-color: #f8f3e8;
+  font-weight: bolder;
+  width: 500px;
+  height: 250px;
+  color: red;
+  display: flexbox;
+  flex-direction: column;
+  justify-items: center;
+  padding-top: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 5px 5px rgba(255, 255, 255, 0.36);
+}
+body {
+  background-color: rgba(0, 0, 0, 0.863);
+}
+.welcome {
+  font-family: "Londrina Sketch";
+  font-weight: bold;
+  font-size: 40px;
+  color: #e11d48;
+}
+
+button {
+  margin-left: 50px;
+  margin-top: 20px;
+}

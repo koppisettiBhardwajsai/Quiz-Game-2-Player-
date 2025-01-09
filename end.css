@@ -1,0 +1,26 @@
+body {
+  background-color: #4b5945;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+#final {
+  background-color: #213555;
+  height: 50vh;
+  width: 100vh;
+  border-radius: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+#buttons {
+  display: flex;
+  gap: 20px;
+}
+#finalScore {
+  font-size: 20px;
+  color: #606c5d;
+}
